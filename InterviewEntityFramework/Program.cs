@@ -17,5 +17,21 @@ class Program
         // {
         //     Console.WriteLine("Blog: " + blogName);
         // }
+
+        // SplitQueryQuestion
+        // var blogs = context.Blogs
+        // .Include(b => b.Posts)
+        // .ToList();
+        //
+        // var blogs = context.Blogs
+        //     .Include(blog => blog.Posts)
+        //     .AsSplitQuery()
+        //     .ToList();
+
+        // Explosion question
+        // var blogs = context.Blogs
+        // .Include(b => b.Posts)
+        // .Include(b => b.Contributors)
+        // .ToList();
     }
 }
