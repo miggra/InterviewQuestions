@@ -7,6 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
+
         // Projection question
         // foreach (var blog in context.Blogs)
         // {

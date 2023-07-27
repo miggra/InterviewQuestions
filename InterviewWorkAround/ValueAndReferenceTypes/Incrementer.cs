@@ -1,11 +1,6 @@
 namespace Interview.ReferenceandValueTypes;
 public class Incrementer
 {
-    public class Counter
-    {
-        public int Count { get; set; }
-    }
-
     public int IncrementAndReturn (int num)
     {
         num++;
@@ -17,7 +12,7 @@ public class Incrementer
         num++;
     }
 
-    public void IncrementObj (object num)
+    public void IncrementObj (ref object num)
     {
         num = (int)num + 1;
     }
@@ -25,5 +20,16 @@ public class Incrementer
     public void IncrementCounter (Counter counter)
     {
         this.Increment(counter.Count);
+    }
+
+    public void IncrementCounter (ICounter counter)
+    {
+        this.Increment(counter.Count);
+    }
+
+    public void SetAnotherCounter (Counter counter)
+    {
+        Counter anoterCounter = new Counter(){Count = 2};
+        counter = anoterCounter;
     }
 }

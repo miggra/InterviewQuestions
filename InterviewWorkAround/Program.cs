@@ -7,6 +7,7 @@ class Program
 
     public static async Task Main()
     {
+        // Объявить
         Task[] myTasks = new Task[MAX_THREAD_COUNT];
         for (int i = 0; i < MAX_THREAD_COUNT; i++)
         {

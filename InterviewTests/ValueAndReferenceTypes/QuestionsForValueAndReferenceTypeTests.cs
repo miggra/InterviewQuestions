@@ -44,22 +44,52 @@ public class QuestionsForValueAndReferenceTypeTests
         Object obj = x;
 
         // Act
-        incrementer.IncrementObj(obj);
+        incrementer.IncrementObj(ref obj);
 
         // Assert
-        // TODO
+        Assert.Equal(2, obj);
     }
 
     [Fact]
     public void Test4()
     {
         // Arrange
-        var counter = new Incrementer.Counter() { Count = 1 };
+        var counter = new Counter() { Count = 1 };
 
         // Act
         incrementer.IncrementCounter(counter);
 
         // Assert
-        // TODO
+        Assert.Equal(2, counter.Count);
+    }
+
+    [Fact]
+    public void Test5()
+    {
+        // Arrange
+        var counter = new Counter() { Count = 1 };
+
+        // Act
+        incrementer.SetAnotherCounter(counter);
+
+        // Assert
+        Assert.Equal(1, counter.Count);
+    }
+
+    [Fact]
+    public void Level2Test1()
+    {
+
+        // Arrange
+        Counter foo = new Counter() {Count = 1};
+
+        // Act
+        incrementer.IncrementCounter(foo);
+        Console.WriteLine(foo.Count);
+
+        incrementer.IncrementCounter(foo);
+        Console.WriteLine(foo.Count);
+
+        // Assert
     }
 }
