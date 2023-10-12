@@ -2,6 +2,6 @@
 {
     public interface IMessageBuilder
     {
-        public string SubstitudePlaceholders(string messageTemplate, Dictionary<string, string> substitutions)
+        public string SubstitudePlaceholders(string messageTemplate, Dictionary<string, string> substitutions);
     }
 }

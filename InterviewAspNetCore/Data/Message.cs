@@ -1,5 +1,5 @@
 namespace InterviewAspNetCore.Data;
-class Message
+public class Message
 {
     public Message(string recipient, string templateType, Dictionary<string, string> templateSubstitutions)
     {

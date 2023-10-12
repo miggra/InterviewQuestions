@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\InterviewEntityFramework\InterviewEntityFramework.csproj" />
     <ProjectReference Include="..\InterviewWorkAround\InterviewWorkAround.csproj" />
   </ItemGroup>
 
