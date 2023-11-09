@@ -1,4 +1,4 @@
-namespace Interview.ReferenceandValueTypes;
+namespace InterviewTests.ValueAndReferenceType;
 public class Incrementer
 {
     public int IncrementAndReturn (int num)

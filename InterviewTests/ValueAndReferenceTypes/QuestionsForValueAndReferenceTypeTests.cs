@@ -1,6 +1,4 @@
-using Interview.ReferenceandValueTypes;
-
-namespace InterviewTests;
+namespace InterviewTests.ValueAndReferenceType;
 
 public class QuestionsForValueAndReferenceTypeTests
 {

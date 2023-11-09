@@ -1,4 +1,4 @@
-namespace Interview.ReferenceandValueTypes;
+namespace InterviewTests.ValueAndReferenceType;
 
 public interface ICounter
 {
